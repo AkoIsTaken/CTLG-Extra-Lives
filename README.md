@@ -1,6 +1,16 @@
-# Extra Lives - v1.1.2
+# Extra Lives - v1.1.1
 
-### Requires Experimental Build cdda-windows-tiles-sounds-x64-2023-03-26-0909 or newer! 0.G contains a bug with respawning that causes frequent crashes upon respawn.
+### This mod is a fork from https://github.com/ProAtWorkHere/CDDA-Extra-Lives. All the code and ideas belongs to them, and with their blessing i was told i can fix what's broken. 
+
+### Beware i have no idea what I'm doing! I'm merely motivated by how much i love this mod and I'm not sure if i will have the time or motivation to continue working on it as time goes on. Anyone more competent is welcome to fork this and continue the work with all the credits given.
+
+### Requires Experimental Build cdda-windows-tiles-sounds-x64-2024-01-31-0909 or newer! 0.G contains a bug with respawning that causes frequent crashes upon respawn. 
+
+### This mod *will* break again as math functions, EOC and other things gets updated!!!
+
+
+## **To install**
+Drop this folder into the mods folder.
 
 ## **Features:**
 
@@ -14,7 +24,7 @@ Strange Stone Circles (SSC) can be found rarely in the wilderness, which contain
 
 ## **When you die:**
 
-No matter what kind of respawn you undergo, you will always drop all worn, wielded and carried items upon death. An extra life is spent if available, and then you will be respawned; Healing your entire body, removing all negative conditions, resetting all needs to satisfied, etc. CBMs and mutations are retained, as is any mutagenic material inside you. There are 3 kinds of respawns you will experience:
+Unless playing at tourist or easy, you will always drop all worn, wielded and carried items upon death. An extra life is spent if available, and then you will be respawned; Healing your entire body, removing all negative conditions, resetting all needs to satisfied, etc. CBMs and mutations are retained, as is any mutagenic material inside you. There are 3 kinds of respawns you will experience:
 
 **Here:** You respawn right where you died. You gain 60 seconds of great speed, invisibility, no fall damage, waterbreathing and 30 seconds of incorporeality (immune to most things but you cannot interact with physical matter). You also emit waves of force for 5 seconds, continually knocking back nearby enemies.
 
@@ -32,8 +42,13 @@ No matter what kind of respawn you undergo, you will always drop all worn, wield
 
 - The day counter for an additional extra life is not affected by dying, or any other factor. You will reliably regain an extra life every 14/21/28/35 days, depending on difficulty.
 
+## **Bugs**
+- There are some bugs and oddities left that I don't know how to fix. For instance, overdosing on cocaine will continually kill you forever even after respawning.
 
 ## **Changelog**
+
+**v1.1.1:** 
+- Replaced old arithmetic functions with math to prevent crashes. 
 
 **v1.1.0:** 
 - Complete overhaul of the mod's internal functions: There are now 5 difficulty levels to choose from, affecting factors such as extra lives, max extra lives, max extra lives cap, respawn options and life-gain-over-time.
