@@ -1,0 +1,28 @@
+[
+  {
+	"type": "overmap_terrain",
+	"id": "strange_stone_circle",
+	"name": "Strange Stone Circle",
+	"sym": "O",
+	"color": "red",
+	"see_cost": 1
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "nether_respawn_1_1",
+      "nether_respawn_1_2",
+      "nether_respawn_1_3",
+      "nether_respawn_1_4",
+      "nether_respawn_1_5",
+      "nether_respawn_1_6",
+      "nether_respawn_1_7",
+      "nether_respawn_1_8",
+      "nether_respawn_1_9"
+    ],
+    "name": "Presence of Absence",
+    "sym": " ",
+    "color": "white",
+    "see_cost": 1
+  }
+]

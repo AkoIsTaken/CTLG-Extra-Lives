@@ -1,0 +1,18 @@
+[
+  {
+    "type": "furniture",
+    "id": "ssc_respawn_point",
+    "name": "Respawn Altar",
+    "description": "A rather odd looking altar that you can examine to set as your respawn point, should you meet an untimely end.",
+    "symbol": "S",
+    "color": "red",
+    "looks_like": "f_alien_table",
+    "coverage": 0,
+    "move_cost_mod": -1,
+    "required_str": 8,
+    "light_emitted": 12,
+    "crafting_pseudo_item": "ssc_altar",
+    "flags": [ "NO_PICKUP_ON_EXAMINE", "TRANSPARENT" ],
+    "examine_action": { "type": "effect_on_condition", "effect_on_conditions": [ "EOC_set_SSC_spawn_point" ] }
+  }
+]

@@ -1,0 +1,13 @@
+[
+ {
+    "type": "monstergroup",
+    "name": "GROUP_NETHER_RESPAWN",
+    "default": "mon_blank",
+    "monsters": [
+      { "monster": "mon_yugg_respawn", "weight": 30, "cost_multiplier": 0 },
+      { "monster": "mon_shoggoth", "weight": 30, "cost_multiplier": 0 },
+      { "monster": "mon_hound_tindalos_respawn", "weight": 20, "cost_multiplier": 0 },
+      { "monster": "mon_yrax_trifacet", "weight": 20, "cost_multiplier": 0 }
+    ]
+  }
+]

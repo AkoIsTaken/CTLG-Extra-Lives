@@ -1,0 +1,124 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [
+      [ "nether_respawn_1_3", "nether_respawn_1_2", "nether_respawn_1_1" ],
+      [ "nether_respawn_1_6", "nether_respawn_1_5", "nether_respawn_1_4" ],
+      [ "nether_respawn_1_9", "nether_respawn_1_8", "nether_respawn_1_7" ]
+    ],
+    "object": {
+      "fill_ter": "t_region_groundcover",
+      "rows": [
+        "                         xxx            x                               ",
+        "  xx            x  x    xx       x  x  xxx   x          x x             ",
+        "  x  xx xx   xX xx x x xx  x   x x xx  xxXx xx x   xx xxXxx xx  xx  xx  ",
+        "    xxxxxxx xxXXx  xx xxXXXXx  xxx xxxx XXxxxxXx  xx  xxXxxxx   xxxxXxx ",
+        "     xxxxx  xxXXXxxxXxXxXxXXXx  XxxxxXxxXXXxXXXxxxXxXxxXXxxXx x   xXXx  ",
+        "    xxxxxxXXXXXXXXxXXXXXxxxXXxxxXxXXXXXXXXXxxXXXxXXXxxXXxxXXxXXxxXXXXx  ",
+        "  xxxxxXXXXXXxxxXXxXXXXXXXXXXxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxx   ",
+        "   xxxxXXxxXXxxxxXXXxXxxxxxxXXxx#xXxxXxXXXxxXxxXxxxXXXXxXXxxXXXxxx   x  ",
+        "  x   xxXXxxxXxXXXXxxxxxxxxxxXXx###xxxxxXXxxxxxxxxxXxXxxxxxxXXXXXxx  xx ",
+        "  xxx  xxXXXXxxxxxxxxxx#xxxxxxxxxx###xxxxxxxxxxxxxxxx#xx##xxxxxXXXXx  x ",
+        "    xxxxxxxXXXxxxxxxxxx###xxxxxxxxx##xxxxxx#xxxxxxxxxx#x#xxxXXXXXXXXXXx ",
+        "  xx  xxXXXXxxxB##xxx##x##xxxxxxx#xxxxxxxx###x#xxxxxxxxx#xxXXxxxxXxxX   ",
+        "  x    xxXXxxx##xx#xxxxx####x#xxxxxxxxxxxxxx####x#xxxxx####xXXxxx       ",
+        "  xx xxxxxXXXxxxxxxxxxxxxxxxxxxxxxxxxBxxxxxxxxx##xx#xxxxx##BXXXxx xx    ",
+        "  xxxxXXxxxXXxxx#xxx#xxxxxxxxx##xxxxxxxxx#xxx#xxx####xxxxxxxxxXXXXXXx   ",
+        "     xxXxxXXxxxxxxxx#xxxxxx##xxxxxx#xxxxxxxxxxx##xxx#xxxxxxxxxxXXxxx    ",
+        "    xxxxxxXXXXxxx####x#xxxxx#xxxxxx###xxxx#xxxxxxx#xxxx#xxxxxxXXxx      ",
+        "      xxXXxxXXxxxxx######x#xxxxxxxxxxxxxxxx###xxxxxxxxxxxxxxxXXxxxxx    ",
+        "    xxxxxxXXXxxxx####xxxxxxxxxxxxxxxxxxxxxx##xxxx#xxxxxx#xxxxXXxxxxxxx  ",
+        "   xxXXXxXXxxxxxxx#xxxxx##xxxx#xxxxx#xxxxxxxxxxx#xxx#xxxxxxxxXXXxx xxxx ",
+        "      xXXXXxxxxxxxxxxxxxxxxxxxxxxxx####xxxxxxxx#B#xx#xxxxxxxXXXXXx  xx  ",
+        "   xxxxxxXXxx#xxxxxxx###xxxxxxx####xx#xxxxxxx#xxxxxx##xx#xxxXxxXxxxX    ",
+        "  xxx xXXXXXxxxxxxxxxx#Bxx#xxxxx#####xxxxxxxxxxx#####xxxxxxxXXXxxxXX xx ",
+        "     xXxxXxxxxxxx##xxxxxxx#xxx##xxxx#xxxxx#xx###xxxxxxx#xXXXXXXXxx    x ",
+        "      xxXXXXxxxx##xxxxxxxxxxxxxxx#xxxxxxxxxxxxxx#xx##xxxxxxxXXXXx  xxxx ",
+        "    xxxxXXxXxxxxx##xxxxxxxxxxxxxxxxx#xxxxxxxx#xxxxxx##xxxxXXXXXxxxxxxx  ",
+        "  xxxx xxXXXXxxx##xxxx##xxxx###xxxxx#xxxBxxxxxxxxxxxxx#xxxxXXxxxxxxXXx  ",
+        "   x  xxxxXXxxxxxxxxxx#xxxxxxx####xxxxx#xxxxxxx##xxxxxxxxxxxXXXXxxXX    ",
+        "   X xXXXXXXx#xxxxxxxxxx#xxxx####xxxxx##xxxx##xxxxxxxxxxxxxxxxxXXXXxxxx ",
+        "  xXXxxXXXB##xxxx###xxxx##xx##xxxxx#xxx##xxxx##xxxxx#x##xxxxXXxXXxxxxx  ",
+        "    XXXXXX#xxxxxxxxx###xxxx#xxxx###xxxx##xxxxxxxxxx##xx##xxXXxxxxx      ",
+        "     XxxxXXXXxxx###xxxxxxxx#xxxxx#xxxxxxxxxxxxxxxx#BxxxxxxxXXXXxxXxxx   ",
+        "  x  XXxxxXXXxxxx##xxxxxxxxxxxxxxxxxx#xxxx#xxxxxxxxxxxxxxxXXxxXXXxx xx  ",
+        "  xx xXXXXXxxxxxxxxxxxx#xxxxxx#xxxx###xxxx##xxxxxxxxx##xxxxXXXXXXxx  x  ",
+        "   xxxxxXXXXXxxxxxxxxxxxxBxx###xxxxxxxxxx####xxxxx##x#xx#xxxxXXXXxxx x  ",
+        "     xxxXxXXXxxxxxxx#xxxxx###xxxxxxx##xxxxxxxxxxxxxx###xxxxxxXxXXXXXX   ",
+        "  xxxxxxxXxXXxx#xxx#xxxxxxxxxx#####xxxxxxxxxxxxxx##xxBxxxxxXXxxXXX XXx  ",
+        "    xXxXXXXxxxxx###xxxxxxxx####xx####xxxxx##xxxxxxx#xxx#xxxxXXXXXxxxxx  ",
+        "  xxxxXXXXXXxx##xx#xxxxxxxxxx#xxxxxxxxxx###xxxxx#xxxxxxxxxxxXXxxxXxxx   ",
+        "   xxxxXXXXXXxxx##xxxxxxxxxx#x##xx##xxxxx##xxxx####xx#xxxxxXXxxxxx   x  ",
+        "  x   xxXXXXXXXXx###x#xxxxxxxx####xxxxxxxx#xxxxx##x###xxxx#####xxxx  xx ",
+        "  xxx  xxXXXXxXxxxxxxxxxxxxxx##xx####xxxxxBxxxxxxxxxxx####xx#xxXXxxx  x ",
+        "    xxxxxxxxxXXxxxxxx#xxxxxxxxxxxxx#xxxxxxxxxxxxxxx#xx##xx#xxxXXXXXXxxx ",
+        "  xx  xxx####xxxxxxxxxxx#xxxxxxxxxxxxxxx##xxxxxxxx####xxxxxxXXXXxxXXx   ",
+        "  x    xxxxx##xxx##xxxxxxxxx#xxxx###xxxxxx#xxxxxxxx#xxxxx#xxxxXXx       ",
+        "  xx xxxXXXXxx#xxx#xx##xxxx#x#xxxx#xxxxxxxxxxxxxxxxxxxxxxxxxxXXxx xx    ",
+        "  xxxxXXXxxXXxxxxxxxxxx###xxxxxxxxxxxxxx##xxxxxx#xxxxxxxxxxxxxXXXXXxx   ",
+        "     xxxxxXxXXxxx#xxx###xxxx#xxxxxx#xxxxx##xxxxxxx#xxxxx##xxxXXXXxxx    ",
+        "    xxxxXXXXXXxxxxxx###xxB#xxxxxxxxxxxxxxxx###xx#xxxxxx##xxxXXxxxX      ",
+        "      XXXXXXXxxxxxxxx####xxxxxxxxxxxxx#xx##xxxxxxxx#xxxxx##xXXXxxxxX    ",
+        "    XXXXxxxXXxxxxxxx#x####xxxxxx#xxxxxxxx###xxxxxxx###xxxxxxxXXXXxxXXXX ",
+        "   xxXxxxxxxXXXxxx##xxxx#xxxxxxxxxxxxxxx#xx#xx##xxx#BxxxxxxxXXXXXX xxXx ",
+        "      xxxXXXXBx#####xxxxxxxxxxxxxx###xxxxxxxxxxxxxxxxxxxxxxXXXxxxXx  xx ",
+        "   xXxxXXXXxxx#xxx#xx#xxxxxxx#x#####xxxxxxxxxxxxxx#xxxxx#xXXXXxxxxx     ",
+        "  xXX xxXXXxxxxxxx#xx#x#xxx#xxxxxx##xxxxxx#xxx##xx#x#xxxxx#xXXXXxxxx xx ",
+        "     xxxxxXXxxxxxxx###xxxxxxxxxxxxxxxxxxxxxxxx#xx###xxxxxxxxxxXXXX    x ",
+        "      xxXXXxxxxx##xx####xxxxxx#xxxxxxxxxxxx#xx##xxx###xxxxxxxXXXX  xxxx ",
+        "    xxxxxXXXxXxxx#xxxxxxxxxxxxx#xxxxx#Bxxxxxxxx##xx#xxxxxxxxXXxxxxxxxx  ",
+        "  xxxx xxXXXXXXx##xxxxxxxx##xxx#x#xxxx#xx#xxxxxx##x##xxxxxxXXXXxxxx xx  ",
+        "   x  xxxxXXXxB##xxxxxx#xxxxxx###xxxxxxxxx##xxxxxxxxxxxxxXXXXXXXxxxx    ",
+        "     xxXXXXXXxxxxxx##xxxxxxxx###xx#xxxxxxxxxxxxxxxxxxxxx##XXXXXXXxXXxxx ",
+        "  xxxxXXXxxXXxxxxxx#xxxxxxxxxxxxxxxxxxxxxxxXXxxxxx####xxxx#XXXXXxxXxxx  ",
+        "    xxxxxxxXXXXXxx#xxxXXxxxxxXxx##xxxxXXXXXXXXxxxxx##x#BxxxxxxXXXx      ",
+        "      xxxxXXXXXxxxxxXXXXXXXXXXXx#XXXXXXxXxxXXXxxxxxxxx#xxxxxxxXXxxxxx   ",
+        "  x    xXxXXXxxxxXXXXXxxXXXXXXx#xXXXxXXxxxxxXXXXXXxxxXXXXXXXXXXxxxx xx  ",
+        "  xx xxxxXXXXXXXXXxxXxxxxxXXXx##xxXXxxXxxXXXXXxxxXXXXXxxXXXXXxXXXxx  x  ",
+        "   xxxxXXXXXxxXXxx xxxxxXXXxxxxxXXxxxxxXXXXXXXXXxxXxXXxxxxxxxxxXxxxx x  ",
+        "     xxXxxxx xxXXxx  xxx xxxxxxXXXxxxxx  x  XXXXxxXx xxxxxxxxxxxxxxxx   ",
+        "  xxxxxx  xx  xx xX  xxx x xx xXx xxxxxxx x   xxxxx   xx xxxx xxxx x    ",
+        "    xxx  xxxx x     xxx      xxx  xx  xx xx  xx  xxx      xxx  x  xxx   ",
+        "   xxx      xx             xxx   xx  xX  x      xx  xxxxxxx      xx     ",
+        "                         xxx          x               xxx               "
+      ],
+      "terrain": {
+        "x": "t_nether_glass_floor_respawn",
+        "X": "t_nether_glass_wall_respawn",
+        "B": "t_nether_flesh_floor_respawn",
+        "#": "t_nether_flesh_floor_respawn"
+      },
+      "items": { "B": { "item": "nether_respawn_loot", "chance": 50 } },
+      "place_monster": [
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 15, 23 ], "y": [ 20, 23 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 14, 15 ], "y": [ 50, 55 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 58, 59 ], "y": [ 50, 55 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 29, 44 ], "y": [ 32, 40 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 29, 35 ], "y": [ 56, 63 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 54, 59 ], "y": [ 10, 15 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 57, 64 ], "y": [ 31, 35 ], "repeat": [ 4, 6 ] },
+        { "group": "GROUP_NETHER_RESPAWN", "x": [ 17, 19 ], "y": [ 31, 35 ], "repeat": [ 4, 6 ] }
+      ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_nether_respawn_warning",
+    "eoc_type": "OM_MOVE",
+    "condition": {
+      "and": [
+        { "u_near_om_location": "nether_respawn_1_5", "range": 2 },
+        { "math": [ "u_nether_respawn_first_visit", "!=", "1" ] }
+      ]
+    },
+    "effect": [
+      {
+        "u_message": "As you approach the bizzare tear in reality, a sense you didn't even know you had begins to buzz somewhere inside your skull. Merely gazing at the black un-reality seems to cause the buzzing to increase. Something about the darker-than-black presence of absense seems to be slowing your thoughts and actions...\n\nYou feel that making contact with it will amplify this slowing malaise dramatically.",
+        "popup": true,
+        "type": "bad"
+      },
+      { "math": [ "u_nether_respawn_first_visit", "=", "1" ] }
+    ]
+  }
+]

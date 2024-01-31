@@ -1,0 +1,153 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_resurrect_pushback_repeat1",
+    "effect": [
+      { "u_cast_spell": { "id": "resurrect_pushback" } },
+      { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
+      { "queue_eocs": "EOC_resurrect_pushback_repeat2", "time_in_future": "1 s" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_resurrect_pushback_repeat2",
+    "effect": [
+      { "u_cast_spell": { "id": "resurrect_pushback" } },
+      { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
+      { "queue_eocs": "EOC_resurrect_pushback_repeat3", "time_in_future": "1 s" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_resurrect_pushback_repeat3",
+    "effect": [
+      { "u_cast_spell": { "id": "resurrect_pushback" } },
+      { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
+      { "queue_eocs": "EOC_resurrect_pushback_repeat4", "time_in_future": "1 s" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_resurrect_pushback_repeat4",
+    "effect": [
+      { "u_cast_spell": { "id": "resurrect_pushback" } },
+      { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
+      { "queue_eocs": "EOC_resurrect_pushback_repeat5", "time_in_future": "1 s" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_resurrect_pushback_repeat5",
+    "effect": [
+      { "u_cast_spell": { "id": "resurrect_pushback" } },
+      { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
+      { "u_message": "The waves of force eminating from you ceases.", "type": "bad" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_check_info",
+    "condition": { "math": [ "u_SSC_point_set", "==", "1" ] },
+    "effect": {
+      "switch": { "math": [ "u_respawn_diff_selection" ] },
+      "cases": [
+        {
+          "case": 0,
+          "effect": [ { "u_message": "Tourist Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_has_SSC_tourist" ] } ]
+        },
+        {
+          "case": 1,
+          "effect": [ { "u_message": "Easy Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_has_SSC" ] } ]
+        },
+        {
+          "case": 2,
+          "effect": [ { "u_message": "Normal Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_has_SSC" ] } ]
+        },
+        {
+          "case": 3,
+          "effect": [ { "u_message": "Hard Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_has_SSC" ] } ]
+        },
+        {
+          "case": 4,
+          "effect": [ { "u_message": "Very Hard Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_has_SSC" ] } ]
+        }
+      ]
+    },
+    "false_effect": {
+      "switch": { "math": [ "u_respawn_diff_selection" ] },
+      "cases": [
+        {
+          "case": 0,
+          "effect": [ { "u_message": "Tourist Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_no_SSC_tourist" ] } ]
+        },
+        {
+          "case": 1,
+          "effect": [ { "u_message": "Easy Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_no_SSC" ] } ]
+        },
+        {
+          "case": 2,
+          "effect": [ { "u_message": "Normal Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_no_SSC" ] } ]
+        },
+        {
+          "case": 3,
+          "effect": [ { "u_message": "Hard Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_no_SSC" ] } ]
+        },
+        {
+          "case": 4,
+          "effect": [ { "u_message": "Very Hard Difficulty" }, { "run_eocs": [ "EOC_respawn_check_info_no_SSC" ] } ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_check_info_has_SSC",
+    "effect": [
+      { "remove_active_mission": "MISSION_SSC_LOCATION" },
+      {
+        "u_message": "Extra Lives remaining: <u_val:lives_remaining>\nMaximum Extra Lives: <u_val:max_extra_lives>\nMaximum Extra Lives Cap: <u_val:max_extra_lives_cap>\nDeaths: <u_val:death_count>\n"
+      },
+      { "u_message": "Your selected SSC respawn point is viewable in your Missions menu and Map." },
+      { "assign_mission": "MISSION_SSC_LOCATION" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_check_info_no_SSC",
+    "effect": [
+      { "remove_active_mission": "MISSION_SSC_LOCATION" },
+      {
+        "u_message": "Extra Lives remaining: <u_val:lives_remaining>\nMaximum Extra Lives: <u_val:max_extra_lives>\nMaximum Extra Lives Cap: <u_val:max_extra_lives_cap>\nDeaths: <u_val:death_count>\n"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_check_info_has_SSC_tourist",
+    "effect": [
+      { "remove_active_mission": "MISSION_SSC_LOCATION" },
+      { "u_message": "Deaths: <u_val:death_count>" },
+      { "u_message": "Your selected SSC respawn point is viewable in your Missions menu and Map." },
+      { "assign_mission": "MISSION_SSC_LOCATION" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_check_info_no_SSC_tourist",
+    "effect": [ { "remove_active_mission": "MISSION_SSC_LOCATION" }, { "u_message": "Deaths: <u_val:death_count>" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_increase_max_extra_lives",
+    "condition": { "math": [ "u_max_extra_lives", "<", "u_max_extra_lives_cap" ] },
+    "effect": [ { "math": [ "u_max_extra_lives", "+=", "1" ] }, { "u_message": "You have gained +1 to your maximum extra lives!" } ],
+    "false_effect": [ { "u_message": "You are already at your maximum extra lives cap!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_respawn_increase_extra_lives",
+    "condition": { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
+    "effect": [ { "math": [ "u_lives_remaining", "+=", "1" ] }, { "u_message": "You have gained an extra life!" } ],
+    "false_effect": [ { "u_message": "You are already at your maximum extra lives!" } ]
+  }
+]
