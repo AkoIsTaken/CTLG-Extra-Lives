@@ -1,4 +1,4 @@
-# Extra Lives - v1.1.1
+# Extra Lives - v1.1.2
 
 ### This mod is a fork from https://github.com/ProAtWorkHere/CDDA-Extra-Lives. All the code and ideas belongs to them, and with their blessing i was told i can fix what's broken. 
 
