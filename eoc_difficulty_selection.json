@@ -151,7 +151,7 @@
     "recurrence": 1209600,
     "condition": {
       "and": [
-        { "math": [ "u_respawn_lives_remaining", "<", "u_max_extra_lives" ] },
+        { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
         { "math": [ "u_unlimited_lives", "!=", "1" ] },
         { "math": [ "u_respawn_extra_life_regain_selection", "==", "0" ] }
       ]
@@ -167,7 +167,7 @@
     "recurrence": 1814400,
     "condition": {
       "and": [
-        { "math": [ "u_respawn_lives_remaining", "<", "u_max_extra_lives" ] },
+        { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
         { "math": [ "u_unlimited_lives", "!=", "1" ] },
         { "math": [ "u_respawn_extra_life_regain_selection", "==", "1" ] }
       ]
@@ -183,7 +183,7 @@
     "recurrence": 2419200,
     "condition": {
       "and": [
-        { "math": [ "u_respawn_lives_remaining", "<", "u_max_extra_lives" ] },
+        { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
         { "math": [ "u_unlimited_lives", "!=", "1" ] },
         { "math": [ "u_respawn_extra_life_regain_selection", "==", "2" ] }
       ]
@@ -199,7 +199,7 @@
     "recurrence": 3024000,
     "condition": {
       "and": [
-        { "math": [ "u_respawn_lives_remaining", "<", "u_max_extra_lives" ] },
+        { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
         { "math": [ "u_unlimited_lives", "!=", "1" ] },
         { "math": [ "u_respawn_extra_life_regain_selection", "==", "3" ] }
       ]

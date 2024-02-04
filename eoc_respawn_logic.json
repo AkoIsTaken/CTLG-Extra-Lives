@@ -19,7 +19,7 @@
     "id": "EOC_respawn_check_difficulty",
     "condition": { "math": [ "u_respawn_diff_selection", ">=", "0" ] },
     "effect": {
-      "switch": { "math": [ "u_respawn_diff_run_once" ] },
+      "switch": { "math": [ "u_respawn_diff_selection" ] },
       "cases": [
         {
           "case": 0,
@@ -211,8 +211,8 @@
       },
       { "u_add_effect": "incorporeal", "duration": "30 s" },
       { "u_add_effect": "resurrection_incorporeal_dummy", "duration": "30 s" },
-      { "u_add_effect": "resurrection_effects", "duration": "60 s" },
-      { "u_add_effect": "resurrection_speed", "duration": "60 s" },
+      { "u_add_effect": "resurrection_effects", "duration": "90 s" },
+      { "u_add_effect": "resurrection_speed", "duration": "90 s" },
       { "u_add_effect": "respawn_grace_time", "duration": "30 s" },
       { "run_eocs": "EOC_heal_and_reset_conditions" },
       { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
@@ -237,8 +237,8 @@
             { "math": [ "u_lives_remaining", "-=", "1" ] },
             { "u_add_effect": "incorporeal", "duration": "30 s" },
             { "u_add_effect": "resurrection_incorporeal_dummy", "duration": "30 s" },
-            { "u_add_effect": "resurrection_effects", "duration": "60 s" },
-            { "u_add_effect": "resurrection_speed", "duration": "60 s" },
+            { "u_add_effect": "resurrection_effects", "duration": "90 s" },
+            { "u_add_effect": "resurrection_speed", "duration": "90 s" },
             { "u_add_effect": "respawn_grace_time", "duration": "30 s" },
             { "run_eocs": "EOC_heal_and_reset_conditions" },
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
@@ -258,8 +258,8 @@
           "effect": [
             { "remove_active_mission": "MISSION_REACH_BODY" },
             { "math": [ "u_lives_remaining", "-=", "1" ] },
-            { "u_add_effect": "resurrection_effects", "duration": "60 s" },
-            { "u_add_effect": "resurrection_speed", "duration": "60 s" },
+            { "u_add_effect": "resurrection_effects", "duration": "90 s" },
+            { "u_add_effect": "resurrection_speed", "duration": "90 s" },
             { "u_add_effect": "respawn_grace_time", "duration": "30 s" },
             { "run_eocs": "EOC_heal_and_reset_conditions" },
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
@@ -451,7 +451,7 @@
         }
       },
       { "u_remove_item_with": "resurrect_cold_protection_random_only" },
-      { "math": [ "n_lives_remaining", "-=", "1" ] },
+      { "math": [ "u_lives_remaining", "-=", "1" ] },
       { "u_add_effect": "incorporeal", "duration": "1 s" },
       { "u_add_effect": "resurrection_effects", "duration": "300 s" },
       { "u_add_effect": "resurrection_speed", "duration": "300 s" },

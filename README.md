@@ -9,7 +9,7 @@
 ### This mod *will* break again as math functions, EOC and other things gets updated!!!
 
 
-## **To install**
+## **To install:**
 Drop this folder into the mods folder.
 
 ## **Features:**
@@ -26,7 +26,7 @@ Strange Stone Circles (SSC) can be found rarely in the wilderness, which contain
 
 Unless playing at tourist or easy, you will always drop all worn, wielded and carried items upon death. An extra life is spent if available, and then you will be respawned; Healing your entire body, removing all negative conditions, resetting all needs to satisfied, etc. CBMs and mutations are retained, as is any mutagenic material inside you. There are 3 kinds of respawns you will experience:
 
-**Here:** You respawn right where you died. You gain 60 seconds of great speed, invisibility, no fall damage, waterbreathing and 30 seconds of incorporeality (immune to most things but you cannot interact with physical matter). You also emit waves of force for 5 seconds, continually knocking back nearby enemies.
+**Here:** You respawn right where you died. You gain 90 seconds of great speed, invisibility, no fall damage, waterbreathing and 30 seconds of incorporeality (immune to most things but you cannot interact with physical matter). You also emit waves of force for 5 seconds, continually knocking back nearby enemies.
 
 **At Strange Stone Circle:** Same effects as respawning Here, except you are only given this option if you have previously found and activated an altar in a Strange Stone Circle. Brings you back to that location.
 
@@ -42,10 +42,14 @@ Unless playing at tourist or easy, you will always drop all worn, wielded and ca
 
 - The day counter for an additional extra life is not affected by dying, or any other factor. You will reliably regain an extra life every 14/21/28/35 days, depending on difficulty.
 
-## **Bugs**
+## **Bugs:**
 - There are some bugs and oddities left that I don't know how to fix. For instance, overdosing on cocaine will continually kill you forever even after respawning.
 
-## **Changelog**
+## **Changelog:**
+
+**v1.1.2:** 
+- Fixed respawn randomly not working.
+- Changed invisibility to 90 seconds.
 
 **v1.1.1:** 
 - Replaced old arithmetic functions with math to prevent crashes. 
