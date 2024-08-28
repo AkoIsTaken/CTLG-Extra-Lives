@@ -23,6 +23,6 @@
     "name": "Presence of Absence",
     "sym": " ",
     "color": "white",
-    "see_cost": 1
+    "see_cost": "low"
   }
 ]
