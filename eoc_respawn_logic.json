@@ -147,7 +147,7 @@
       { "math": [ "u_hp('leg_r')", "=", "max( u_hp('leg_r'), 100)" ] },
       { "math": [ "u_hp('ALL')", "+=", "100" ] },
       { "math": [ "u_hp('ALL_MAJOR')", "+=", "100" ] },
-      { "math": [ "u_val('stored_kcal')", "=", "max( u_val('stored_kcal'), 9000)" ] },
+      { "math": [ "u_calories()", "=", "max( u_calories(), 9000)" ] },
       { "math": [ "u_val('thirst')", "=", "min( u_val('thirst'), 800)" ] },
       { "math": [ "u_vitamin('redcells')", "=", "0" ] },
       { "math": [ "u_vitamin('bad_food')", "=", "0" ] },
@@ -157,7 +157,7 @@
       { "math": [ "u_val('rad')", "=", "0" ] },
       { "math": [ "u_val('morale')", "=", "1" ] },
       { "math": [ "u_val('stamina')", "=", "6000" ] },
-      { "math": [ "u_val('fatigue')", "=", "1" ] },
+      { "math": [ "u_val('sleepiness')", "=", "1" ] },
       { "math": [ "u_val('focus')", "=", "100" ] },
       { "u_lose_effect": "corroding" },
       { "u_lose_effect": "onfire" },
@@ -228,7 +228,6 @@
     "id": "EOC_respawn_SSC",
     "effect": {
       "switch": { "math": [ "u_respawn_no_item_drop_on_death" ] },
-
       "cases": [
         {
           "case": 0,
