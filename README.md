@@ -47,6 +47,10 @@ Unless playing at tourist or easy, you will always drop all worn, wielded and ca
 
 ## **Changelog:**
 
+**v1.1.3:** 
+- Replaced new special attack yugg function
+- Replaced new see cost function
+
 **v1.1.2:** 
 - Fixed respawn randomly not working.
 - Changed invisibility to 90 seconds.
