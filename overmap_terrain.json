@@ -5,7 +5,7 @@
 	"name": "Strange Stone Circle",
 	"sym": "O",
 	"color": "red",
-	"see_cost": 1
+	"see_cost": "low"
   },
   {
     "type": "overmap_terrain",
