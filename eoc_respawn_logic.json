@@ -158,6 +158,7 @@
       { "math": [ "u_val('morale')", "=", "1" ] },
       { "math": [ "u_val('stamina')", "=", "6000" ] },
       { "math": [ "u_val('sleepiness')", "=", "1" ] },
+      { "math": [ "u_val('sleep_deprivation')", "=", "0" ] },
       { "math": [ "u_val('focus')", "=", "100" ] },
       { "u_lose_effect": "corroding" },
       { "u_lose_effect": "onfire" },
