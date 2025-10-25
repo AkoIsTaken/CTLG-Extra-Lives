@@ -1,7 +1,7 @@
 [
- {
+  {
     "type": "monstergroup",
-    "name": "GROUP_NETHER_RESPAWN",
+    "id": "GROUP_NETHER_RESPAWN",
     "default": "mon_blank",
     "monsters": [
       { "monster": "mon_yugg_respawn", "weight": 30, "cost_multiplier": 0 },
