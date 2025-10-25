@@ -5,7 +5,7 @@
     "effect": [
       { "u_cast_spell": { "id": "resurrect_pushback" } },
       { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
-      { "queue_eocs": "EOC_resurrect_pushback_repeat2", "time_in_future": "1 s" }
+      { "run_eocs": "EOC_resurrect_pushback_repeat2", "time_in_future": "1 s" }
     ]
   },
   {
@@ -14,7 +14,7 @@
     "effect": [
       { "u_cast_spell": { "id": "resurrect_pushback" } },
       { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
-      { "queue_eocs": "EOC_resurrect_pushback_repeat3", "time_in_future": "1 s" }
+      { "run_eocs": "EOC_resurrect_pushback_repeat3", "time_in_future": "1 s" }
     ]
   },
   {
@@ -23,7 +23,7 @@
     "effect": [
       { "u_cast_spell": { "id": "resurrect_pushback" } },
       { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
-      { "queue_eocs": "EOC_resurrect_pushback_repeat4", "time_in_future": "1 s" }
+      { "run_eocs": "EOC_resurrect_pushback_repeat4", "time_in_future": "1 s" }
     ]
   },
   {
@@ -32,7 +32,7 @@
     "effect": [
       { "u_cast_spell": { "id": "resurrect_pushback" } },
       { "u_message": "A wave of force eminates from you, knocking back those around you!", "type": "good" },
-      { "queue_eocs": "EOC_resurrect_pushback_repeat5", "time_in_future": "1 s" }
+      { "run_eocs": "EOC_resurrect_pushback_repeat5", "time_in_future": "1 s" }
     ]
   },
   {
