@@ -1,23 +1,26 @@
 [
   {
     "id": "resurrect_cold_protection_random_only",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "name": { "str": "Climate Control Aura" },
     "description": "Protection from cold temperatures for a duration.",
     "weight": "1g",
     "volume": "1ml",
-    "price": 0,
+    "price": "50 cent",
     "symbol": "]",
     "looks_like": "jumpsuit",
     "warmth": 120,
     "color": "red",
     "material": [ "plastic" ],
-    "flags": [ "AURA", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "WATERPROOF", "TRADER_AVOID", "UNBREAKABLE", "NONCONDUCTIVE" ],
-    "relic_data": { "passive_effects": [ { "id": "ench_resurrect_cold_protect_random" } ] },
+    "flags": [ "AURA", "SEMITANGIBLE", "OVERSIZE", "WATERPROOF", "TRADER_AVOID", "UNBREAKABLE", "NONCONDUCTIVE" ],
+    "max_worn": 1,
     "armor": [
       {
-        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "head", "foot_l", "foot_r", "mouth", "eyes" ]
+        "coverage": 100,
+        "covers": [ "head", "mouth", "eyes", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
       }
-    ]
+    ],
+    "passive_effects": [ { "id": "ench_resurrect_cold_protect_random" } ]
   }
 ]
