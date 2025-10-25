@@ -16,7 +16,8 @@
   },
   {
     "id": "ssc_altar",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "nearby SSC Altar" },
     "description": "Psuedo item.",
     "weight": "1 g",
