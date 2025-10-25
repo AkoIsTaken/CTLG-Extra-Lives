@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [
       [ "nether_respawn_1_3", "nether_respawn_1_2", "nether_respawn_1_1" ],
       [ "nether_respawn_1_6", "nether_respawn_1_5", "nether_respawn_1_4" ],
@@ -105,7 +104,8 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_nether_respawn_warning",
-    "eoc_type": "OM_MOVE",
+    "eoc_type": "EVENT",
+    "required_event": "avatar_enters_omt",
     "condition": {
       "and": [
         { "u_near_om_location": "nether_respawn_1_5", "range": 2 },
