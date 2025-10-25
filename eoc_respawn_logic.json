@@ -159,12 +159,16 @@
       { "math": [ "u_val('stamina')", "=", "6000" ] },
       { "math": [ "u_val('sleepiness')", "=", "1" ] },
       { "math": [ "u_val('sleep_deprivation')", "=", "0" ] },
+      { "math": [ "u_val('pkill') = 0" ] },
       { "math": [ "u_val('focus')", "=", "100" ] },
       { "u_lose_effect": "corroding" },
       { "u_lose_effect": "onfire" },
       { "u_lose_effect": "dazed" },
       { "u_lose_effect": "stunned" },
       { "u_lose_effect": "venom_blind" },
+      { "u_lose_effect": "nausea" },
+      { "u_lose_effect": "stim" },
+      { "u_lose_effect": "stim_overdose" },
       { "u_lose_effect": "formication" },
       { "u_lose_effect": "blisters" },
       { "u_lose_effect": "frostbite" },
@@ -196,7 +200,7 @@
       { "u_lose_effect": "hot_speed" },
       { "u_lose_effect": "sad" },
       { "u_lose_effect": "blisters" },
-      { "queue_eocs": "EOC_heal_and_reset_conditions", "time_in_future": "1 s" }
+      { "run_eocs": "EOC_heal_and_reset_conditions", "time_in_future": "1 s" }
     ]
   },
   {
@@ -220,7 +224,7 @@
       { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
       { "u_message": "Waves of force eminates from you, knocking back those around you!", "type": "good" },
       { "u_cast_spell": { "id": "resurrect_pushback" } },
-      { "queue_eocs": "EOC_resurrect_pushback_repeat1", "time_in_future": "1 s" },
+      { "run_eocs": "EOC_resurrect_pushback_repeat1", "time_in_future": "1 s" },
       { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
     ]
   },
@@ -244,7 +248,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_ssc_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_ssc_delay", "time_in_future": "1 s" },
             {
               "u_message": "In the split-second before your life is snuffed out, you are remade and sent to your SSC respawn point!",
               "popup": true,
@@ -265,7 +269,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_ssc_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_ssc_delay", "time_in_future": "1 s" },
             {
               "u_message": "In the split-second before your life is snuffed out, you are remade and sent to your SSC respawn point!",
               "popup": true,
@@ -315,7 +319,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
             { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
           ]
         },
@@ -349,7 +353,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
             { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
           ]
         }
@@ -388,7 +392,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
             { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
           ]
         },
@@ -421,7 +425,7 @@
             { "u_add_effect": "cureall", "duration": "1 s", "intensity": 1 },
             { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
             { "u_location_variable": { "global_val": "respawn_death_location" } },
-            { "queue_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
+            { "run_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
             { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
           ]
         }
@@ -461,7 +465,7 @@
       { "u_add_effect": "panacea", "duration": "30 s", "intensity": 1 },
       { "u_cast_spell": { "id": "resurrect_cold_protection_random" } },
       { "u_location_variable": { "global_val": "respawn_death_location" } },
-      { "queue_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
+      { "run_eocs": "EOC_teleport_far_away_delay", "time_in_future": "1 s" },
       { "u_message": "** You have <u_val:lives_remaining> extra lives remaining! **", "type": "bad" }
     ]
   },
