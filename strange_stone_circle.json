@@ -1,38 +1,37 @@
 [
   {
-	"//": " *** PROHERE ADDITIONS *** ",
-	"type": "mapgen",
-	"method": "json",
-	"om_terrain": "strange_stone_circle",
-	"object": {
-	  "fill_ter": "t_region_groundcover",
-	  "rows": [
-		"                        ",
-		"                        ",
-		"                        ",
-		"        BBB  BBB        ",
-		"     BBBB      BBBB     ",
-		"   BBB    BBBB    BBB   ",
-		"  BB    BBB  BBB    BB  ",
-		" BB                  BB ",
-		"BB                    BB",
-		"B    BB          BB    B",
-		"    BB     XX     BB    ",
-		"    BB     XX     BB    ",
-		"B    BB          BB    B",
-		"BB                    BB",
-		" BB                  BB ",
-		"  BB    BBB  BBB    BB  ",
-		"   BBB    BBBB    BBB   ",
-		"     BBBB      BBBB     ",
-		"        BBB  BBB        ",
-		"                        ",
-		"                        ",
-		"                        ",
-		"                        ",
-		"                        "
-	],
-	"furniture": { "X": "ssc_respawn_point", "B": "f_boulder_large" }
-	}
+    "//": " *** PROHERE ADDITIONS *** ",
+    "type": "mapgen",
+    "om_terrain": "strange_stone_circle",
+    "object": {
+      "fill_ter": "t_region_groundcover",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "        BBB  BBB        ",
+        "     BBBB      BBBB     ",
+        "   BBB    BBBB    BBB   ",
+        "  BB    BBB  BBB    BB  ",
+        " BB                  BB ",
+        "BB                    BB",
+        "B    BB          BB    B",
+        "    BB     XX     BB    ",
+        "    BB     XX     BB    ",
+        "B    BB          BB    B",
+        "BB                    BB",
+        " BB                  BB ",
+        "  BB    BBB  BBB    BB  ",
+        "   BBB    BBBB    BBB   ",
+        "     BBBB      BBBB     ",
+        "        BBB  BBB        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "furniture": { "X": "ssc_respawn_point", "B": "f_boulder_large" }
+    }
   }
 ]
