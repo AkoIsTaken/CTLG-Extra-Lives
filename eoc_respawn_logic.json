@@ -3,9 +3,9 @@
     "type": "effect_on_condition",
     "id": "EOC_respawn_begin",
     "eoc_type": "PREVENT_DEATH",
-    "condition": { "or": [ { "math": [ "u_lives_remaining", ">", "0" ] }, { "math": [ "u_unlimited_lives", "==", "1" ] } ] },
-    "effect": [ { "math": [ "u_death_count", "+=", "1" ] }, { "run_eocs": [ "EOC_respawn_check_difficulty" ] } ],
-    "false_effect": [ { "math": [ "u_death_count", "+=", "1" ] }, { "run_eocs": [ "EOC_respawn_check_permadeath" ] } ]
+    "condition": { "or": [ { "math": [ "u_lives_remaining > 0" ] }, { "math": [ "u_unlimited_lives == 1" ] } ] },
+    "effect": [ { "math": [ "u_death_count += 1" ] }, { "run_eocs": [ "EOC_respawn_check_difficulty" ] } ],
+    "false_effect": [ { "math": [ "u_death_count += 1" ] }, { "run_eocs": [ "EOC_respawn_check_permadeath" ] } ]
   },
   {
     "type": "effect_on_condition",
@@ -17,7 +17,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_check_difficulty",
-    "condition": { "math": [ "u_respawn_diff_selection", ">=", "0" ] },
+    "condition": { "math": [ "u_respawn_diff_selection >= 0" ] },
     "effect": {
       "switch": { "math": [ "u_respawn_diff_selection" ] },
       "cases": [
@@ -56,7 +56,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_normal_check_no_lives",
-    "condition": { "math": [ "u_lives_remaining", "<=", "0" ] },
+    "condition": { "math": [ "u_lives_remaining <= 0" ] },
     "effect": [ { "run_eocs": [ "EOC_respawn_random" ] } ],
     "false_effect": [ { "run_eocs": [ "EOC_respawn_choose_here" ] } ]
   },
@@ -77,26 +77,24 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_choose_random",
-    "condition": {
-      "and": [ { "math": [ "u_respawn_diff_selection", "<", "2" ] }, { "u_query": "Respawn randomly?", "default": false } ]
-    },
+    "condition": { "and": [ { "math": [ "u_respawn_diff_selection < 2" ] }, { "u_query": "Respawn randomly?", "default": false } ] },
     "effect": [ { "run_eocs": [ "EOC_respawn_random" ] } ],
     "false_effect": [ { "run_eocs": [ "EOC_respawn_choose_here" ] } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_check_SSC",
-    "condition": { "math": [ "u_SSC_point_set", "==", "1" ] },
+    "condition": { "math": [ "u_SSC_point_set == 1" ] },
     "effect": [ { "run_eocs": [ "EOC_respawn_choose_SSC" ] } ],
     "false_effect": [ { "run_eocs": [ "EOC_respawn_choose_random" ] } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_set_SSC_spawn_point",
-    "condition": { "math": [ "u_respawn_diff_selection", "==", "4" ] },
+    "condition": { "math": [ "u_respawn_diff_selection == 4" ] },
     "effect": [ { "u_message": "You cannot set a respawn point in Very Hard mode.", "popup": true } ],
     "false_effect": [
-      { "math": [ "u_SSC_point_set", "=", "1" ] },
+      { "math": [ "u_SSC_point_set = 1" ] },
       { "u_location_variable": { "global_val": "ssc_respawn_point_location" } },
       { "remove_active_mission": "MISSION_SSC_LOCATION" },
       { "u_message": "Respawn point selected!", "popup": true }
@@ -105,7 +103,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_check_easy_no_lives",
-    "condition": { "math": [ "u_lives_remaining", "<=", "0" ] },
+    "condition": { "math": [ "u_lives_remaining <= 0" ] },
     "effect": [ { "run_eocs": [ "EOC_respawn_check_SSC_easy" ] } ],
     "false_effect": [ { "run_eocs": [ "EOC_respawn_choose_here" ] } ]
   },
@@ -114,7 +112,7 @@
     "id": "EOC_respawn_choose_SSC_easy",
     "condition": { "u_query": "Respawn at SSC?", "default": false },
     "//": "below line is to fix negative lives from respawning with no lives left. better fix to be implemented",
-    "effect": [ { "math": [ "u_lives_remaining", "=", "1" ] }, { "run_eocs": [ "EOC_respawn_SSC" ] } ],
+    "effect": [ { "math": [ "u_lives_remaining = 1" ] }, { "run_eocs": [ "EOC_respawn_SSC" ] } ],
     "false_effect": [ { "run_eocs": [ "EOC_respawn_choose_random_easy" ] } ]
   },
   {
@@ -127,7 +125,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_check_SSC_easy",
-    "condition": { "math": [ "u_SSC_point_set", "==", "1" ] },
+    "condition": { "math": [ "u_SSC_point_set == 1" ] },
     "effect": [ { "run_eocs": [ "EOC_respawn_choose_SSC_easy" ] } ],
     "false_effect": [
       { "u_message": "No SSC point selected, random respawn only.", "popup": true },
@@ -147,8 +145,8 @@
       { "math": [ "u_hp('leg_r')", "=", "max( u_hp('leg_r'), 100)" ] },
       { "math": [ "u_hp('ALL')", "+=", "100" ] },
       { "math": [ "u_hp('ALL_MAJOR')", "+=", "100" ] },
-      { "math": [ "u_calories()", "=", "max( u_calories(), 9000)" ] },
-      { "math": [ "u_val('thirst')", "=", "min( u_val('thirst'), 800)" ] },
+      { "math": [ "u_calories() = max( u_calories(), 100000)" ] },
+      { "math": [ "u_val('thirst') = min( u_val('thirst'), 0)" ] },
       { "math": [ "u_vitamin('redcells')", "=", "0" ] },
       { "math": [ "u_vitamin('bad_food')", "=", "0" ] },
       { "math": [ "u_vitamin('blood')", "=", "0" ] },
@@ -200,7 +198,19 @@
       { "u_lose_effect": "wet" },
       { "u_lose_effect": "hot_speed" },
       { "u_lose_effect": "sad" },
-      { "u_lose_effect": "blisters" },
+      { "u_lose_effect": "tetanus" },
+      { "u_lose_effect": "flu" },
+      { "u_lose_effect": "pre_flu" },
+      { "u_lose_effect": "tapeworm" },
+      { "u_lose_effect": "fungus" },
+      { "u_lose_effect": "dermatik" },
+      { "u_lose_effect": "rat_bite_fever" },
+      { "u_lose_effect": "common_cold" },
+      { "u_lose_effect": "blind" },
+      { "u_lose_effect": "braiworms" },
+      { "u_lose_effect": "paincysts" },
+      { "u_lose_effect": "bloodworms" },
+      { "u_lose_effect": "VITRIFYING" },
       { "run_eocs": "EOC_heal_and_reset_conditions", "time_in_future": "1 s" }
     ]
   },
@@ -209,7 +219,7 @@
     "id": "EOC_respawn_here",
     "effect": [
       { "remove_active_mission": "MISSION_REACH_BODY" },
-      { "math": [ "u_lives_remaining", "-=", "1" ] },
+      { "math": [ "u_lives_remaining -= 1" ] },
       {
         "u_message": "In the split-second before your life is snuffed out, you are remade!",
         "popup": true,
@@ -239,7 +249,7 @@
           "case": 0,
           "effect": [
             { "remove_active_mission": "MISSION_REACH_BODY" },
-            { "math": [ "u_lives_remaining", "-=", "1" ] },
+            { "math": [ "u_lives_remaining -= 1" ] },
             { "u_add_effect": "incorporeal", "duration": "30 s" },
             { "u_add_effect": "resurrection_incorporeal_dummy", "duration": "30 s" },
             { "u_add_effect": "resurrection_effects", "duration": "90 s" },
@@ -262,7 +272,7 @@
           "case": 1,
           "effect": [
             { "remove_active_mission": "MISSION_REACH_BODY" },
-            { "math": [ "u_lives_remaining", "-=", "1" ] },
+            { "math": [ "u_lives_remaining -= 1" ] },
             { "u_add_effect": "resurrection_effects", "duration": "90 s" },
             { "u_add_effect": "resurrection_speed", "duration": "90 s" },
             { "u_add_effect": "respawn_grace_time", "duration": "30 s" },
@@ -285,14 +295,14 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_random",
-    "condition": { "and": [ { "math": [ "u_lives_remaining", ">=", "1" ] }, { "math": [ "u_respawn_diff_selection", "<=", "1" ] } ] },
+    "condition": { "and": [ { "math": [ "u_lives_remaining >= 1" ] }, { "math": [ "u_respawn_diff_selection <= 1" ] } ] },
     "effect": {
       "switch": { "math": [ "u_respawn_no_item_drop_on_death" ] },
       "cases": [
         {
           "case": 0,
           "effect": [
-            { "math": [ "u_lives_remaining", "-=", "1" ] },
+            { "math": [ "u_lives_remaining -= 1" ] },
             { "remove_active_mission": "MISSION_REACH_BODY" },
             {
               "u_message": "You are remade! But you've been sent somewhere far away... (Game may appear to freeze for some time while selecting a random respawn location. Press space to continue.)",
@@ -327,7 +337,7 @@
         {
           "case": 1,
           "effect": [
-            { "math": [ "u_lives_remaining", "-=", "1" ] },
+            { "math": [ "u_lives_remaining -= 1" ] },
             { "remove_active_mission": "MISSION_REACH_BODY" },
             {
               "u_message": "You are remade! But you've been sent somewhere far away... (Game may appear to freeze for some time while selecting a random respawn location. Press space to continue.)",
@@ -456,7 +466,7 @@
         }
       },
       { "u_remove_item_with": "resurrect_cold_protection_random_only" },
-      { "math": [ "u_lives_remaining", "-=", "1" ] },
+      { "math": [ "u_lives_remaining -= 1" ] },
       { "u_add_effect": "incorporeal", "duration": "1 s" },
       { "u_add_effect": "resurrection_effects", "duration": "300 s" },
       { "u_add_effect": "resurrection_speed", "duration": "300 s" },
@@ -493,7 +503,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_teleport_far_away_delay",
-    "condition": { "math": [ "u_respawn_no_item_drop_on_death", "==", "1" ] },
+    "condition": { "math": [ "u_respawn_no_item_drop_on_death == 1" ] },
     "effect": [ { "u_teleport": { "global_val": "respawn_far_away_point" } }, { "assign_mission": "MISSION_REACH_BODY" } ],
     "false_effect": [
       { "u_teleport": { "global_val": "respawn_far_away_point" } },
