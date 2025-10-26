@@ -154,7 +154,7 @@
       { "math": [ "u_pain()", "=", "0" ] },
       { "math": [ "u_val('rad')", "=", "0" ] },
       { "math": [ "u_val('morale')", "=", "1" ] },
-      { "math": [ "u_val('stamina')", "=", "6000" ] },
+      { "math": [ "u_val('stamina')", "=", "20000" ] },
       { "math": [ "u_val('sleepiness')", "=", "1" ] },
       { "math": [ "u_val('sleep_deprivation')", "=", "0" ] },
       { "math": [ "u_val('pkill') = 0" ] },
