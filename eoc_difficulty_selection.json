@@ -21,9 +21,9 @@
         "u_message": "Select a difficulty level for Extra Lives:\n\nSelecting No will move to the next choice and will loop back if you don't make one.",
         "popup": true
       },
-      { "u_add_var": "respawn_diff_selection", "value": "0" },
-      { "u_add_var": "death_count", "value": "0" },
-      { "math": [ "u_respawn_diff_run_once", "=", "1" ] },
+      { "math": [ "u_respawn_diff_selection = 0" ] },
+      { "math": [ "u_death_count = 0" ] },
+      { "math": [ "u_respawn_diff_run_once = 1" ] },
       { "run_eocs": "EOC_select_difficulty_0" }
     ]
   },
@@ -32,7 +32,7 @@
     "id": "EOC_difficulty_options_begin_game_load_failsafe",
     "eoc_type": "EVENT",
     "required_event": "game_load",
-    "condition": { "math": [ "u_respawn_diff_run_once", "!=", "1" ] },
+    "condition": { "math": [ "u_respawn_diff_run_once != 1" ] },
     "effect": [
       {
         "u_message": "Welcome to Extra Lives, a mod that allows you to continue your journey when you would otherwise meet an untimely end.\n\nYou start with a number of extra lives depending on your difficulty choice, and dying consumes one of these extra lives. You have a maximum number of extra lives, which can be increased up to a cap by finding a very rare encounter.\n\nIn all difficulties above Tourist, you will passively regain extra lives over time.\n\nYou may discover Strange Stone Circles rarely in the wilderness, which have altars that can be examined to set your current position as a respawn location.",
@@ -50,9 +50,9 @@
         "u_message": "Select a difficulty level for Extra Lives:\n\nSelecting No will move to the next choice and will loop back if you don't make one.",
         "popup": true
       },
-      { "u_add_var": "respawn_diff_selection", "value": "0" },
-      { "u_add_var": "death_count", "value": "0" },
-      { "math": [ "u_respawn_diff_run_once", "=", "1" ] },
+      { "math": [ "u_respawn_diff_selection = 0" ] },
+      { "math": [ "u_death_count = 0" ] },
+      { "math": [ "u_respawn_diff_run_once = 1" ] },
       { "run_eocs": "EOC_select_difficulty_0" }
     ]
   },
@@ -64,9 +64,9 @@
       "default": false
     },
     "effect": [
-      { "math": [ "u_respawn_diff_selection", "=", "0" ] },
-      { "math": [ "u_respawn_extra_life_regain_selection", "=", "-1" ] },
-      { "u_add_var": "unlimited_lives", "value": "1" },
+      { "math": [ "u_respawn_diff_selection = 0" ] },
+      { "math": [ "u_respawn_extra_life_regain_selection = -1" ] },
+      { "math": [ "u_unlimited_lives = 1" ] },
       { "run_eocs": [ "EOC_choose_no_item_drop_on_death" ] }
     ],
     "false_effect": [ { "run_eocs": [ "EOC_select_difficulty_1" ] } ]
@@ -79,11 +79,11 @@
       "default": false
     },
     "effect": [
-      { "math": [ "u_respawn_diff_selection", "=", "1" ] },
-      { "math": [ "u_respawn_extra_life_regain_selection", "=", "0" ] },
-      { "u_add_var": "lives_remaining", "value": "3" },
-      { "u_add_var": "max_extra_lives", "value": "3" },
-      { "u_add_var": "max_extra_lives_cap", "value": "5" },
+      { "math": [ "u_respawn_diff_selection = 1" ] },
+      { "math": [ "u_respawn_extra_life_regain_selection = 0" ] },
+      { "math": [ "u_lives_remaining = 3" ] },
+      { "math": [ "u_max_extra_lives = 3" ] },
+      { "math": [ "max_extra_lives_cap = 5" ] },
       { "run_eocs": [ "EOC_choose_no_item_drop_on_death" ] }
     ],
     "false_effect": [ { "run_eocs": [ "EOC_select_difficulty_2" ] } ]
@@ -96,11 +96,11 @@
       "default": false
     },
     "effect": [
-      { "math": [ "u_respawn_diff_selection", "=", "2" ] },
-      { "math": [ "u_respawn_extra_life_regain_selection", "=", "1" ] },
-      { "u_add_var": "lives_remaining", "value": "2" },
-      { "u_add_var": "max_extra_lives", "value": "2" },
-      { "u_add_var": "max_extra_lives_cap", "value": "4" },
+      { "math": [ "u_respawn_diff_selection = 2" ] },
+      { "math": [ "u_respawn_extra_life_regain_selection = 1" ] },
+      { "math": [ "u_lives_remaining = 2" ] },
+      { "math": [ "u_max_extra_lives = 2" ] },
+      { "math": [ "max_extra_lives_cap = 4" ] },
       { "run_eocs": [ "EOC_choose_no_item_drop_on_death" ] }
     ],
     "false_effect": [ { "run_eocs": [ "EOC_select_difficulty_3" ] } ]
@@ -113,11 +113,11 @@
       "default": false
     },
     "effect": [
-      { "math": [ "u_respawn_diff_selection", "=", "3" ] },
-      { "math": [ "u_respawn_extra_life_regain_selection", "=", "2" ] },
-      { "u_add_var": "lives_remaining", "value": "2" },
-      { "u_add_var": "max_extra_lives", "value": "2" },
-      { "u_add_var": "max_extra_lives_cap", "value": "3" }
+      { "math": [ "u_respawn_diff_selection = 3" ] },
+      { "math": [ "u_respawn_extra_life_regain_selection = 2" ] },
+      { "math": [ "u_lives_remaining = 2" ] },
+      { "math": [ "u_max_extra_lives = 2" ] },
+      { "math": [ "max_extra_lives_cap = 3" ] }
     ],
     "false_effect": [ { "run_eocs": [ "EOC_select_difficulty_4" ] } ]
   },
@@ -129,11 +129,11 @@
       "default": false
     },
     "effect": [
-      { "math": [ "u_respawn_diff_selection", "=", "4" ] },
-      { "math": [ "u_respawn_extra_life_regain_selection", "=", "3" ] },
-      { "u_add_var": "lives_remaining", "value": "1" },
-      { "u_add_var": "max_extra_lives", "value": "1" },
-      { "u_add_var": "max_extra_lives_cap", "value": "2" }
+      { "math": [ "u_respawn_diff_selection = 4" ] },
+      { "math": [ "u_respawn_extra_life_regain_selection = 3" ] },
+      { "math": [ "u_lives_remaining = 1" ] },
+      { "math": [ "u_max_extra_lives = 1" ] },
+      { "math": [ "max_extra_lives_cap = 2" ] }
     ],
     "false_effect": [ { "run_eocs": [ "EOC_select_difficulty_0" ] } ]
   },
@@ -153,12 +153,12 @@
     "condition": {
       "and": [
         { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
-        { "math": [ "u_unlimited_lives", "!=", "1" ] },
-        { "math": [ "u_respawn_extra_life_regain_selection", "==", "0" ] }
+        { "math": [ "u_unlimited_lives != 1" ] },
+        { "math": [ "u_respawn_extra_life_regain_selection == 0" ] }
       ]
     },
     "effect": [
-      { "math": [ "u_lives_remaining", "+=", "1" ] },
+      { "math": [ "u_lives_remaining += 1" ] },
       { "u_message": "Your continued survival for 14 days has earned you an extra life!", "popup": true }
     ]
   },
@@ -169,12 +169,12 @@
     "condition": {
       "and": [
         { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
-        { "math": [ "u_unlimited_lives", "!=", "1" ] },
-        { "math": [ "u_respawn_extra_life_regain_selection", "==", "1" ] }
+        { "math": [ "u_unlimited_lives != 1" ] },
+        { "math": [ "u_respawn_extra_life_regain_selection == 1" ] }
       ]
     },
     "effect": [
-      { "math": [ "u_lives_remaining", "+=", "1" ] },
+      { "math": [ "u_lives_remaining += 1" ] },
       { "u_message": "Your continued survival for 21 days has earned you an extra life!", "popup": true }
     ]
   },
@@ -185,12 +185,12 @@
     "condition": {
       "and": [
         { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
-        { "math": [ "u_unlimited_lives", "!=", "1" ] },
-        { "math": [ "u_respawn_extra_life_regain_selection", "==", "2" ] }
+        { "math": [ "u_unlimited_lives != 1" ] },
+        { "math": [ "u_respawn_extra_life_regain_selection == 2" ] }
       ]
     },
     "effect": [
-      { "math": [ "u_lives_remaining", "+=", "1" ] },
+      { "math": [ "u_lives_remaining += 1" ] },
       { "u_message": "Your continued survival for 28 days has earned you an extra life!", "popup": true }
     ]
   },
@@ -201,12 +201,12 @@
     "condition": {
       "and": [
         { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
-        { "math": [ "u_unlimited_lives", "!=", "1" ] },
-        { "math": [ "u_respawn_extra_life_regain_selection", "==", "3" ] }
+        { "math": [ "u_unlimited_lives != 1" ] },
+        { "math": [ "u_respawn_extra_life_regain_selection == 3" ] }
       ]
     },
     "effect": [
-      { "math": [ "u_lives_remaining", "+=", "1" ] },
+      { "math": [ "u_lives_remaining += 1" ] },
       { "u_message": "Your continued survival for 35 days has earned you an extra life!", "popup": true }
     ]
   }
