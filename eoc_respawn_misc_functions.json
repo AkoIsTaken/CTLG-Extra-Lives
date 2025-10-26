@@ -47,7 +47,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_check_info",
-    "condition": { "math": [ "u_SSC_point_set", "==", "1" ] },
+    "condition": { "math": [ "u_SSC_point_set == 1" ] },
     "effect": {
       "switch": { "math": [ "u_respawn_diff_selection" ] },
       "cases": [
@@ -140,14 +140,14 @@
     "type": "effect_on_condition",
     "id": "EOC_respawn_increase_max_extra_lives",
     "condition": { "math": [ "u_max_extra_lives", "<", "u_max_extra_lives_cap" ] },
-    "effect": [ { "math": [ "u_max_extra_lives", "+=", "1" ] }, { "u_message": "You have gained +1 to your maximum extra lives!" } ],
+    "effect": [ { "math": [ "u_max_extra_lives += 1" ] }, { "u_message": "You have gained +1 to your maximum extra lives!" } ],
     "false_effect": [ { "u_message": "You are already at your maximum extra lives cap!" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_respawn_increase_extra_lives",
     "condition": { "math": [ "u_lives_remaining", "<", "u_max_extra_lives" ] },
-    "effect": [ { "math": [ "u_lives_remaining", "+=", "1" ] }, { "u_message": "You have gained an extra life!" } ],
+    "effect": [ { "math": [ "u_lives_remaining += 1" ] }, { "u_message": "You have gained an extra life!" } ],
     "false_effect": [ { "u_message": "You are already at your maximum extra lives!" } ]
   }
 ]
