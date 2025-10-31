@@ -1,8 +1,7 @@
 [
   {
     "id": "resurrect_cold_protection_random_only",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "type": "ARMOR",
     "name": { "str": "Climate Control Aura" },
     "description": "Protection from cold temperatures for a duration.",
     "weight": "1g",
@@ -14,8 +13,9 @@
     "color": "red",
     "material": [ "plastic" ],
     "flags": [ "AURA", "SEMITANGIBLE", "OVERSIZE", "WATERPROOF", "TRADER_AVOID", "UNBREAKABLE", "NONCONDUCTIVE" ],
-    "max_worn": 1,
-    "passive_effects": [ { "id": "ench_resurrect_cold_protect_random" } ],
+    "relic_data": {
+      "passive_effects": [ { "id": "ench_resurrect_cold_protect_random" } ]
+    },
     "armor": [
       {
         "coverage": 100,

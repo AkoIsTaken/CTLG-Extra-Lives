@@ -1,7 +1,6 @@
 [
   {
-    "type": "ITEM",
-    "subtypes": [ "TOOL" ],
+    "type": "TOOL",
     "id": "respawn_infostone",
     "name": { "str": "Respawn Info Tablet" },
     "description": "View your remaining lives, active SSC point etc.",
@@ -20,8 +19,7 @@
   {
     "id": "respawn_gain_extra_life",
     "name": { "str": "Netherum Anomaly" },
-    "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "type": "COMESTIBLE",
     "comestible_type": "MED",
     "consumption_effect_on_conditions": [ "EOC_respawn_increase_extra_lives" ],
     "description": "An odd amalgamation of exotic elements. Ingesting this utterly foreign matter will bring about forces unseen upon you, strengthening your metaphysical connection to the Nether. In practical terms, your maximum extra lives is increased by 1 (to your cap).",
@@ -37,8 +35,7 @@
   {
     "id": "respawn_gain_max_extra_life",
     "name": { "str": "Unreal Netherum Anomaly" },
-    "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
+    "type": "COMESTIBLE",
     "comestible_type": "MED",
     "consumption_effect_on_conditions": [ "EOC_respawn_increase_max_extra_lives" ],
     "description": "An extremely odd amalgamation of many exotic elements configured in an intentional, specific array. Ingesting this utterly foreign matter will bring about forces unseen upon you, strengthening your metaphysical connection to the Nether. In practical terms, you gain an extra life, up to your current maximum.",
@@ -53,8 +50,7 @@
   },
   {
     "id": "netherum_substrate",
-    "type": "ITEM",
-    "subtypes": [ "AMMO" ],
+    "type": "AMMO",
     "category": "other",
     "name": { "str_sp": "Exotic Netherum Subtrate" },
     "description": "A strangely perception-defying suggestion of some kind of exotic matter. Can be used to craft metaphysical anomalies.",

@@ -2,6 +2,7 @@
   {
     "//": " *** PROHERE ADDITIONS *** ",
     "type": "mapgen",
+    "method": "json",
     "om_terrain": "strange_stone_circle",
     "object": {
       "fill_ter": "t_region_groundcover",

@@ -1,6 +1,7 @@
 [
   {
     "type": "mapgen",
+    "method": "json",
     "om_terrain": [
       [ "nether_respawn_1_3", "nether_respawn_1_2", "nether_respawn_1_1" ],
       [ "nether_respawn_1_6", "nether_respawn_1_5", "nether_respawn_1_4" ],
